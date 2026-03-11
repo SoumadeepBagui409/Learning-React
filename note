@@ -1,0 +1,40 @@
+CDN = content delivery network
+A Content Delivery Network (CDN) is a system of many servers placed in different locations around the world that help deliver website content to users faster and more efficiently.
+
+To understand it easily, imagine a simple situation.
+
+Suppose a website’s main server is located in the United States, but someone in Kolkata opens that website. If the browser has to fetch everything directly from the US server, the request has to travel a very long distance. This increases latency (delay) and the website loads slowly.
+
+A CDN solves this problem.
+
+Instead of having only one server, the CDN keeps copies of the website’s files (images, JavaScript, CSS, videos, etc.) on many servers located around the world. These servers are called edge servers.
+
+When you open a website:
+
+Your browser sends a request.
+
+The CDN checks which server is closest to your location.
+
+The content is delivered from that nearby server instead of the original server.
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Think of crossorigin as a permission rule when your website loads a file from another website.
+
+Now the browser is very strict about security. When loading files from another website, it normally hides detailed error information to prevent security issues.
+
+Adding crossorigin tells the browser:
+
+“It’s okay to load this file from another website, and if an error happens, show proper error details.”
+``````````````````````````````````````````````````````````````````````````````````````````````````````
+
+react at the end of the day is javascript code. It's an javascript library.
+A JavaScript library is a collection of pre-written JavaScript code that developers can use to perform common tasks without writing everything from scratch.
+
+Think of it as a toolbox of ready-made functions.
+
+Instead of building every tool yourself, you simply take a tool from the toolbox and use it.
+`````````````````````````````````````````````````````````````````````````````````````````````````````
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+THE ABOVE CDN IS THE CORE OF REACT FILE.
+
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+THE ABOVE CND IS FOR DOM (DOCUMENT OBJECT MODEL) MANIPULATION
